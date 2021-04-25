@@ -1,0 +1,8 @@
+---
+- hosts: web-servers
+  become: true
+  tasks:
+    - name: copy war file to tomcat server
+      copy:
+        src: /var/lib/jenkins/workspace/webapp/webapp/target/webapp.war
+        dest: /opt/tomcat/webapps
