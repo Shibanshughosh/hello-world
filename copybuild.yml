@@ -4,5 +4,5 @@
   tasks:
     - name: copy war file to tomcat server
       copy:
-        src: src: /var/lib/jenkins/workspace/Jenkins_Ansible_PkgDeloy_Tomcat/webapp/target/webapp.war
+        src: /var/lib/jenkins/workspace/Jenkins_Ansible_PkgDeloy_Tomcat/webapp/target/webapp.war
         dest: /opt/tomcat/webapps
